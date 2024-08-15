@@ -3,7 +3,7 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from '../src/app.module';
 
-describe('AppController (e2e)', () => {
+describe('Auth contoller (e2e)', () => {
   let app: INestApplication;
 
   beforeEach(async () => {
@@ -17,7 +17,7 @@ describe('AppController (e2e)', () => {
 
   it('/ (GET)', () => {
 
-    const email ='asdfasdf@sdfdsfds.com';
+    const email ='asdfasd2f@sdfdsfds.com';
     return request(app.getHttpServer())
       .post('/auth/signup')
       .send({email, password:'test1234'})
